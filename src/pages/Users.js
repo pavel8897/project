@@ -2,7 +2,6 @@ import {useLocation} from 'react-router-dom';
 
 export const Users = () => {
     let url = useLocation();
-    console.log(url);
     return (
         <div>
             <ul>

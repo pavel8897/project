@@ -1,13 +1,15 @@
-import {Form} from './Form';
 import './Movies.css';
+import {Header} from './layout/Header'
+import {Footer} from './layout/Footer'
+import {Content} from './layout/Content'
+import React from 'react';
 
 export const Movies = () => {
-    return <>
-        <header class="header">            
-            <div className="header-content">
-                <a href="index.html" className="header__logo">Movieapp</a>
-            </div>
-            <Form/>
-        </header>
-    </>
+    return (
+        <div className='wrapper'>
+            <Header />
+            <Content />
+            <Footer />
+        </div>
+    )
 }
